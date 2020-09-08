@@ -6,7 +6,8 @@ public class OpenURL {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/rs683045/git/workspace-rk/Selenium/lib/browsers/chromedriver");
+		// updated relative path 
+		System.setProperty("webdriver.chrome.driver", "./lib/browsers/chromedriver");
 		
 		ChromeDriver chromeDriver = new ChromeDriver();
 		
