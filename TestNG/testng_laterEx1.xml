@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Can be converted to TestNG test which generates testng.xml. test name should be unique. like Smoke, Regression
+We can exclude any specific test case by mentioning in <exclude> inside <methods> tag, and we can use <include> as well
+we can mention the set of <test> in different testng.xml files. with no annotations, TestNG will execute in alphabetic order -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationTestSuite">
+  
+  <test thread-count="5" name="Regression">
+    <classes>
+      <class name="sampletestng.SeleniumTest"/>
+      <class name="sampletestng.HelloTestNG">
+      <methods> 
+      	<exclude name="AdditonalTest" />
+      </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test thread-count="5" name="Smoke">
+    <classes>
+      <class name="sampletestng.SeleniumTest"/>
+    </classes>
+  </test> 
+  
+   <test thread-count="5" name="RestAPITests">
+    <packages>
+      <package name="restapitests"/>
+    </packages>
+  </test> 
+  
+  <test thread-count="5" name="NonMobileFromSelenium">
+    <classes>
+      <class name="sampletestng.SeleniumTest">
+    	 <methods> 
+      	<exclude name="Mobile.*" />
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+  
+</suite>

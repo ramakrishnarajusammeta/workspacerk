@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- we can mention the set of <test> in different testng.xml files. with no annotations, TestNG will execute in alphabetic order ,
+it's also possible to group the different testcases from different places using GROUPS
+can also dependsOnMethods={mothod1,method2} then the specific test will be executed after method1, method2 only
+and use timeout=seconds, to skip if any specific test taking more time -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationTestSuite">
+
+  <test thread-count="5" name="RESTAPI_N_Mobile_Tests">
+    <classes>
+   	  <class name="restapitests.RestAPITest" />
+   	   <class name="sampletestng.MobileTest" />
+   </classes>
+  </test> 
+ 
+ 
+ <test thread-count="5" name="SanityTestCases">
+  <groups>
+   <run> 
+   <include name="SANITY" />
+   </run>
+  </groups>
+  
+    <classes>
+   	  <class name="restapitests.RestAPITest" />
+   	   <class name="sampletestng.HelloTestNG" />
+   	    <class name="sampletestng.SeleniumTest" />
+   </classes>
+  </test> 
+  
+</suite>

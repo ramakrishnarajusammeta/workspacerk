@@ -15,9 +15,7 @@ public class OpenURL {
 		Thread.sleep(10000);
 		System.out.println("Completed Test");
 		chromeDriver.close();
-		
-		
-
+	
 	}
 
 }

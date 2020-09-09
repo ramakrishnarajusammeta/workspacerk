@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGAutomation-SampleProject">
+
+
+  <test thread-count="5" name="TestAutomationFrameWork-Part1">
+   
+   <!-- <parameter name="username" value="srkraju"/>
+   <parameter name="password" value="dost1234"/>-->
+   
+   
+   <classes>  
+      <class name="sampletestng.SeleniumTest"/>
+    </classes>
+        
+    
+    <!-- As alternative to the above, it's possible to mention the packages also -->
+  	<!--   <packages>
+    	<package name="sampletestng"/>
+    	<package name="restapitests"/>
+    </packages>-->
+   <!--  <packages>
+    	<package name="sampletestng"/>
+    </packages>-->
+   
+ <!--   </test> 
+    <test thread-count="5" name="TestAutomationFrameWork-Part2">
+   <packages>
+    	<package name="restapitests"/>
+    </packages>-->
+  </test> 
+  
+  
+</suite> <!-- Suite -->
