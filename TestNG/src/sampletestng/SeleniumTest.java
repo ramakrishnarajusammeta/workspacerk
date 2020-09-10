@@ -1,7 +1,6 @@
 package sampletestng;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class SeleniumTest {
@@ -9,20 +8,22 @@ public class SeleniumTest {
 	//@Parameters({"username","password"})
 	
 	
+	
+	
 	@Test(dataProvider="getData")
-	public void LoginTest(String UserName, String Password) {
-		System.out.println("Username=" + UserName);
+	public void LoginTest(String userName, String Password) {
+		System.out.println("Username=" + userName);
 		System.out.println("Password=" + Password);
 		System.out.println("SeleniumTest:LoginTest success");
 	}
 
-	/*@Test
+	@Test
 	public void LogoutTest() {
 		System.out.println("SeleniumTest:Logout success");
 	}
 	
 
-	@Test
+	/*@Test
 	public void AdminOperationTest1() {
 		System.out.println("SeleniumTest:AdminOperationTest success");
 	}
@@ -30,7 +31,7 @@ public class SeleniumTest {
 	
 	@DataProvider
 	public Object[][] getData() {
-		Object data[][] = new Object[3][3];
+		Object data[][] = new Object[3][2];
 		
 		// 1st set
 		data[0][0] = "firstsetUserName";
