@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30" started-at="2020-09-10T12:42:46Z" finished-at="2020-09-10T12:42:46Z">
+  <suite name="AutomationTestSuite" duration-ms="59" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30" started-at="2020-09-10T12:42:46Z" finished-at="2020-09-10T12:42:46Z">
+    <test name="Regression" duration-ms="25" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+      <class name="sampletestng.HelloTestNG">
+        <test-method status="PASS" signature="BeforeHelloTest()[pri:0, instance:sampletestng.HelloTestNG@7dc7cbad]" name="BeforeHelloTest" is-config="true" duration-ms="0" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeHelloTest -->
+        <test-method status="PASS" signature="HelloTest()[pri:0, instance:sampletestng.HelloTestNG@7dc7cbad]" name="HelloTest" duration-ms="0" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HelloTest -->
+        <test-method status="PASS" signature="AfterHelloTest()[pri:0, instance:sampletestng.HelloTestNG@7dc7cbad]" name="AfterHelloTest" is-config="true" duration-ms="1" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterHelloTest -->
+      </class> <!-- sampletestng.HelloTestNG -->
       <class name="sampletestng.SeleniumTest">
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@23ceabc1]" name="LoginTest" duration-ms="6" started-at="2020-09-10T12:42:46Z" data-provider="getData" finished-at="2020-09-10T12:42:46Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@d2cc05a]" name="LoginTest" duration-ms="4" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@23ceabc1]" name="LoginTest" duration-ms="1" started-at="2020-09-10T12:42:46Z" data-provider="getData" finished-at="2020-09-10T12:42:46Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@d2cc05a]" name="LoginTest" duration-ms="1" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
           <params>
             <param index="0">
               <value>
@@ -39,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@23ceabc1]" name="LoginTest" duration-ms="1" started-at="2020-09-10T12:42:46Z" data-provider="getData" finished-at="2020-09-10T12:42:46Z">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@d2cc05a]" name="LoginTest" duration-ms="1" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
           <params>
             <param index="0">
               <value>
@@ -55,11 +69,145 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="LogoutTest()[pri:0, instance:sampletestng.SeleniumTest@23ceabc1]" name="LogoutTest" duration-ms="1" started-at="2020-09-10T12:42:46Z" finished-at="2020-09-10T12:42:46Z">
+        <test-method status="PASS" signature="LogoutTest()[pri:0, instance:sampletestng.SeleniumTest@d2cc05a]" name="LogoutTest" duration-ms="1" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutTest -->
       </class> <!-- sampletestng.SeleniumTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Regression -->
+    <test name="Smoke" duration-ms="6" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+      <class name="sampletestng.SeleniumTest">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@4501b7af]" name="LoginTest" duration-ms="1" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstsetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstsetPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@4501b7af]" name="LoginTest" duration-ms="1" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondsetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondsetPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@4501b7af]" name="LoginTest" duration-ms="1" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdsetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdsetPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LogoutTest()[pri:0, instance:sampletestng.SeleniumTest@4501b7af]" name="LogoutTest" duration-ms="0" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+      </class> <!-- sampletestng.SeleniumTest -->
+    </test> <!-- Smoke -->
+    <test name="RestAPITests" duration-ms="2" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+      <class name="restapitests.RestAPITest">
+        <test-method status="PASS" signature="RESTLoginTest()[pri:0, instance:restapitests.RestAPITest@27efef64]" name="RESTLoginTest" duration-ms="0" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTLoginTest -->
+        <test-method status="PASS" signature="RESTLogoutTest()[pri:0, instance:restapitests.RestAPITest@27efef64]" name="RESTLogoutTest" duration-ms="0" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTLogoutTest -->
+      </class> <!-- restapitests.RestAPITest -->
+    </test> <!-- RestAPITests -->
+    <test name="NonMobileFromSelenium" duration-ms="5" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+      <class name="sampletestng.HelloTestNG">
+        <test-method status="PASS" signature="BeforeHelloTestSuite()[pri:0, instance:sampletestng.HelloTestNG@7dc7cbad]" name="BeforeHelloTestSuite" is-config="true" duration-ms="6" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeHelloTestSuite -->
+        <test-method status="PASS" signature="AfterHelloTestSuite()[pri:0, instance:sampletestng.HelloTestNG@7dc7cbad]" name="AfterHelloTestSuite" is-config="true" duration-ms="0" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterHelloTestSuite -->
+      </class> <!-- sampletestng.HelloTestNG -->
+      <class name="sampletestng.SeleniumTest">
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@42d80b78]" name="LoginTest" duration-ms="0" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstsetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstsetPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@42d80b78]" name="LoginTest" duration-ms="0" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondsetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondsetPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:sampletestng.SeleniumTest@42d80b78]" name="LoginTest" duration-ms="0" started-at="2020-09-10T12:46:42Z" data-provider="getData" finished-at="2020-09-10T12:46:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdsetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdsetPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LogoutTest()[pri:0, instance:sampletestng.SeleniumTest@42d80b78]" name="LogoutTest" duration-ms="1" started-at="2020-09-10T12:46:42Z" finished-at="2020-09-10T12:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+      </class> <!-- sampletestng.SeleniumTest -->
+    </test> <!-- NonMobileFromSelenium -->
+  </suite> <!-- AutomationTestSuite -->
 </testng-results>
