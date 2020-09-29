@@ -1,33 +1,35 @@
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
 import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import Files.PayLoad;
+import Files.ReUsableMethods;
 public class BasicRestAPITest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
-		given().queryParam("key", "qaclick123").headers("Content-Type","application/json").body("{\n" + 
-				"  \"location\": {\n" + 
-				"    \"lat\": -38.383494,\n" + 
-				"    \"lng\": 33.427362\n" + 
-				"  },\n" + 
-				"  \"accuracy\": 50,\n" + 
-				"  \"name\": \"SRKRaju house\",\n" + 
-				"  \"phone_number\": \"(+91) 983 893 3937\",\n" + 
-				"  \"address\": \"29, side layout, cohen 09\",\n" + 
-				"  \"types\": [\n" + 
-				"    \"shoe park\",\n" + 
-				"    \"shop\"\n" + 
-				"  ],\n" + 
-				"  \"website\": \"http://google.com\",\n" + 
-				"  \"language\": \"French-IN\"\n" + 
-				"}\n" + 
-				" \n" + 
-				"").when().post("maps/api/place/add/json").then().log().all();
+		String response = given().queryParam("key", "qaclick123").headers("Content-Type","application/json").body(PayLoad.AddPlace()).when().post("maps/api/place/add/json")
+		.then().assertThat().statusCode(200).body("scope", equalTo("APP")).header("server", "Apache/2.4.18 (Ubuntu)").extract().response().asString();		
+		
+		
+		System.out.println("Response = " + response);
+		JsonPath js = ReUsableMethods.rawToJSon(response);
+		String place_id = js.getString("place_id");
+		System.out.println("Place_ID="+place_id);
+		
+		// no header is required as there is no body for GET information
+		response = given().queryParam("key", "qaclick123").queryParam("place_id", place_id)
+				.when().post("maps/api/place/get/json").then().statusCode(200).extract().response().asString();
+		JsonPath js1 = ReUsableMethods.rawToJSon(response);
+		String address = js1.getString("address");
+		System.out.println("Address="+address);
 		
 		
 		
-		System.out.println("Completed Testing RestAPI");
 	}
 
 }
