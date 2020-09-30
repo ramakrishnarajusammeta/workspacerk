@@ -29,6 +29,10 @@ public class BasicRestAPITest {
 		System.out.println("Address="+address);
 		
 		
+		ComplexJsonParse cj = new ComplexJsonParse();
+		cj.PraseJSon();
+		
+		
 		
 	}
 
