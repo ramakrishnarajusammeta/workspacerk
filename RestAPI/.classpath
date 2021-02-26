@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/json-path-4.3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/json-schema-validator-4.3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/rest-assured-4.3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/groovy-3.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/groovy-json-3.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/groovy-xml-3.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/hamcrest-2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/httpmime-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/jakarta.activation-api-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/jakarta.xml.bind-api-2.3.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/jaxb-impl-2.3.3.jar"/>
+	<classpathentry kind="lib" path="/Users/rs683045/git/workspace-rk/RestAPI/lib/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

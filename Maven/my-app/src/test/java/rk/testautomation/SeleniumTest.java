@@ -9,6 +9,7 @@ public class SeleniumTest {
 	@Test
 	public void HomePage()
 	{
+		// added fro Maven Branch
 		System.out.println("HomePage test");
 	}
 

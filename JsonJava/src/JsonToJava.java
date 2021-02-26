@@ -30,7 +30,10 @@ public class JsonToJava {
 			
 			Statement st = conn.createStatement();
 			//ResultSet rs = st.executeQuery("select *from CUSTOMERINFO where purchaseddate=to_date(sysdate-1,'dd/mm/yy')");
-			ResultSet rs = st.executeQuery("select *from CUSTOMERINFO");	
+			ResultSet rs = st.executeQuery("select *from CUSTOMERINFO");
+			
+			
+				
 			ArrayList <CustomerDetails>  customerDetails = new ArrayList <CustomerDetails>();
 			
 			
@@ -67,6 +70,7 @@ public class JsonToJava {
 			JSONObject jo = new JSONObject();			
 			jo.put("data", ja);
 			System.out.println(jo.toJSONString());
+			
 			String unEscapedString = StringEscapeUtils.unescapeJava(jo.toJSONString());
 			System.out.println(unEscapedString);
 			
