@@ -8,6 +8,7 @@ public class OpenURL {
 		
 		// updated relative path - modified 13July2022
 		// final update 13July2022-2nd time
+		// update from develop2.0 branch
 		System.setProperty("webdriver.chrome.driver", "./lib/browsers/chromedriver");
 		
 		ChromeDriver chromeDriver = new ChromeDriver();
