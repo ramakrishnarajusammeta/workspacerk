@@ -6,7 +6,7 @@ public class OpenURL {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		// updated relative path 
+		// updated relative path - modified 13July2022
 		System.setProperty("webdriver.chrome.driver", "./lib/browsers/chromedriver");
 		
 		ChromeDriver chromeDriver = new ChromeDriver();
